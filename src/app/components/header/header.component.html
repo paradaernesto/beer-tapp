@@ -14,10 +14,10 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Insumos</a></li>
-        <li><a href="#">Produccion</a></li>
-        <li><a href="#">Ventas</a></li>
+        <li [routerLinkActive] = "['active']" ><a [routerLink]= "['home']">Home<span class="sr-only">(current)</span></a></li>
+        <li [routerLinkActive] = "['active']" ><a [routerLink]= "['stock']">Insumos</a></li>
+        <li [routerLinkActive] = "['active']" ><a [routerLink]= "['production']">Produccion</a></li>
+        <li [routerLinkActive] = "['active']" ><a [routerLink]= "['sales']">Ventas</a></li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
@@ -27,14 +27,12 @@
           </a>
           <ul class="dropdown-menu">
             <li><a href="#">Administrar usuarios</a></li>
-            <li><a href="#">Ver perfil</a></li>
+            <li><a [routerLink] = "['profile']">Ver perfil</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">Cerrar Sesion</a></li>
           </ul>
         </li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
+  </div>
 </nav>
-
-<!-- Side bar -->

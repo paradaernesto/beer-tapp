@@ -12,6 +12,8 @@ import { SalesComponent } from './components/sales/sales.component';
 import { StockComponent } from './components/stock/stock.component';
 import { ProfileComponent } from './components/profile/profile.component';
 
+import { APP_ROUTING } from './routes/app.routes'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,8 @@ import { ProfileComponent } from './components/profile/profile.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AlertModule.forRoot()
+    AlertModule.forRoot(),
+    APP_ROUTING
   ],
   providers: [],
   bootstrap: [AppComponent]
