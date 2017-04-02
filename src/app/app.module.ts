@@ -14,6 +14,10 @@ import { ProfileComponent } from './components/profile/profile.component';
 
 import { APP_ROUTING } from './routes/app.routes'
 
+//3d party
+import { Ng2Bs3ModalModule } from 'ng2-bs3-modal/ng2-bs3-modal';
+import { ChartsModule } from 'ng2-charts';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +33,9 @@ import { APP_ROUTING } from './routes/app.routes'
     FormsModule,
     HttpModule,
     AlertModule.forRoot(),
-    APP_ROUTING
+    APP_ROUTING,
+    Ng2Bs3ModalModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
